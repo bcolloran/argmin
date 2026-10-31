@@ -15,6 +15,7 @@ exclude = []
 
 [dependencies]
 # nalgebra
+nalgebra_0_35 = { package = "nalgebra", version = "0.35", optional = true }
 nalgebra_0_34 = { package = "nalgebra", version = "0.34", optional = true }
 nalgebra_0_33 = { package = "nalgebra", version = "0.33", optional = true }
 nalgebra_0_32 = { package = "nalgebra", version = "0.32", optional = true }
@@ -70,7 +71,8 @@ vec = ["rand", "primitives", "num-complex_0_4"]
 
 # nalgebra
 nalgebra_all = ["primitives"]
-nalgebra_latest = ["nalgebra_v0_34"]
+nalgebra_latest = ["nalgebra_v0_35"]
+nalgebra_v0_35 = ["nalgebra_0_35", "num-complex_0_4", "nalgebra_all"]
 nalgebra_v0_34 = ["nalgebra_0_34", "num-complex_0_4", "nalgebra_all"]
 nalgebra_v0_33 = ["nalgebra_0_33", "num-complex_0_4", "nalgebra_all"]
 nalgebra_v0_32 = ["nalgebra_0_32", "num-complex_0_4", "nalgebra_all"]
